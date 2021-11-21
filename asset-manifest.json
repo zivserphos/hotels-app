@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/zivserphos/hotels-app/static/css/main.bc701ac7.chunk.css",
+    "main.js": "/zivserphos/hotels-app/static/js/main.034e2db3.chunk.js",
+    "main.js.map": "/zivserphos/hotels-app/static/js/main.034e2db3.chunk.js.map",
+    "runtime-main.js": "/zivserphos/hotels-app/static/js/runtime-main.1f9b2101.js",
+    "runtime-main.js.map": "/zivserphos/hotels-app/static/js/runtime-main.1f9b2101.js.map",
+    "static/css/2.383c0125.chunk.css": "/zivserphos/hotels-app/static/css/2.383c0125.chunk.css",
+    "static/js/2.ec7614aa.chunk.js": "/zivserphos/hotels-app/static/js/2.ec7614aa.chunk.js",
+    "static/js/2.ec7614aa.chunk.js.map": "/zivserphos/hotels-app/static/js/2.ec7614aa.chunk.js.map",
+    "index.html": "/zivserphos/hotels-app/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/zivserphos/hotels-app/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.bc701ac7.chunk.css.map": "/zivserphos/hotels-app/static/css/main.bc701ac7.chunk.css.map",
+    "static/js/2.ec7614aa.chunk.js.LICENSE.txt": "/zivserphos/hotels-app/static/js/2.ec7614aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f9b2101.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.ec7614aa.chunk.js",
+    "static/css/main.bc701ac7.chunk.css",
+    "static/js/main.034e2db3.chunk.js"
+  ]
+}
