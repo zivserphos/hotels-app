@@ -1,5 +1,7 @@
 import { Component } from "react";
 import { Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { kebabCase } from "../../helpers/kebabCase";
 
 export default class HotelCard extends Component {
   constructor(props) {
@@ -10,16 +12,33 @@ export default class HotelCard extends Component {
     return (
       <div>
         <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card id={this.props.key}>
+            <Card.Img variant="top" src={"./images/contact.png"} />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>{this.props.name}</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                טלפון={this.props.telephone} <br />
+                רחוב={this.props.street} <br />
+                כתובת={this.props.address} <br />
+                בית={this.props.house} <br />
               </Card.Text>
             </Card.Body>
+            <Card.Footer>
+              {" "}
+              <Link
+                to={{
+                  pathname: `/hotel/${encodeURI(kebabCase(this.props.name))}`,
+                  state: {
+                    telephone: this.props.telephone,
+                    name: this.props.name,
+                    address: this.props.address,
+                    h: this.props.house,
+                  },
+                }}
+              >
+                לאתר הבית
+              </Link>
+            </Card.Footer>
           </Card>
         </Col>
       </div>

@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HotelGallery from "./component/home-page/HotelsGallery";
+import HotelPage from "./hotelPage";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="/hotelInfo" element={<HotelGallery />} />
+          <Route path="/hotel/:name" element={<HotelPage />} />
           <Route
             path="*"
             element={

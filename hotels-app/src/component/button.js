@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { ThemeContext } from "../App";
 
 class Button extends Component {
   constructor(props) {

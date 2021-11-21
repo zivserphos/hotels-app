@@ -4,8 +4,9 @@ import Button from "./component/button";
 import "./common.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HotelGallery from "./component/home-page/HotelsGallery";
+import Layout from "./component/layout/Layout";
 
-const Context = createContext();
+export const ThemeContext = createContext("unknown");
 
 class App extends Component {
   constructor(props) {
@@ -24,11 +25,11 @@ class App extends Component {
   };
   render() {
     return (
-      <Context.Provider value={this.state.hotel}>
-        <div
-          className="App"
-          style={{ backgroundColor: this.state.backgroundColor }}
-        >
+      <div
+        className="App"
+        style={{ backgroundColor: this.state.backgroundColor }}
+      >
+        <Layout>
           Boker Tov Olam!
           <div className="button">
             <Button color="grey" changeColor={this.changeColor} />
@@ -40,13 +41,12 @@ class App extends Component {
               paddingBottom: "1rem",
             }}
           >
-            <Link to="/">Home-Page</Link> |{" "}
-            {/* <Link to="/expenses">Expenses</Link> */}
+            <Link to="/"></Link>{" "}
           </nav>
           <Outlet />
           <HotelGallery />
-        </div>
-      </Context.Provider>
+        </Layout>
+      </div>
     );
   }
 }

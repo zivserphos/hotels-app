@@ -9,7 +9,17 @@ export default class HotelGallery extends Component {
   }
   render() {
     const cards = data.map((card) => {
-      return <HotelCard />;
+      return (
+        <HotelCard
+          img={""}
+          name={card["שם"]}
+          address={card["כתובת"]}
+          street={card["רחוב"]}
+          telephone={card["טלפון"]}
+          house={card["בית"]}
+          key={card["key"]}
+        />
+      );
     });
     return (
       <Container>
