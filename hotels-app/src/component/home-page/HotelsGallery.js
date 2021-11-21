@@ -2,7 +2,7 @@ import { Component } from "react";
 import HotelCard from "./HotelCard";
 import { Row, Container } from "react-bootstrap";
 
-class HotelGallery extends Component {
+export default class HotelGallery extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -114,5 +114,3 @@ const data = [
     טלפון: "8508888",
   },
 ];
-
-export default HotelGallery;
