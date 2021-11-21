@@ -28,12 +28,12 @@ export default class HotelCard extends Component {
               <Link
                 to={{
                   pathname: `/hotel/${encodeURI(kebabCase(this.props.name))}`,
-                  state: {
-                    telephone: this.props.telephone,
-                    name: this.props.name,
-                    address: this.props.address,
-                    h: this.props.house,
-                  },
+                  // state: {
+                  //   telephone: this.props.telephone,
+                  //   name: this.props.name,
+                  //   address: this.props.address,
+                  //   house: this.props.house,
+                  // },
                 }}
               >
                 לאתר הבית

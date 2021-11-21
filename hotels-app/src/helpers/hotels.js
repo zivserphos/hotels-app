@@ -1,11 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HotelPage from "./hotelPage";
-import { kebabCase } from "./helpers/kebabCase";
-import Layout from "./component/layout/Layout";
-
 const data = [
   {
     key: "marom-hotel",
@@ -100,35 +92,6 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<App />} />
-          {/* <Route path="/hotel/:name" element={<HotelPage />} /> */}
-          {data.map((hotel) => {
-            return (
-              <Route
-                path={`/hotel/${encodeURI(kebabCase(hotel["שם"]))}`}
-                element={<HotelPage hotel={hotel} />}
-              />
-            );
-          })}
-          {/* </Route> */}
-          {/* <Route exact path="/" element={<HotelPage />} /> */}
-
-          <Route
-            path="*"
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
-              </main>
-            }
-          />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+export default function hotels() {
+  return data;
+}
