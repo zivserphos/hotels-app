@@ -6,7 +6,12 @@ class Button extends Component {
     this.state = {};
   }
   render() {
-    return <button style={{ backgroundColor: this.props.color }}></button>;
+    return (
+      <button
+        style={{ backgroundColor: this.props.color }}
+        onClick={() => this.props.changeColor(this.props.color)}
+      ></button>
+    );
   }
 }
 
