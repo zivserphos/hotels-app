@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import img from "./images/contact.png";
 
 export default class HotelPage extends Component {

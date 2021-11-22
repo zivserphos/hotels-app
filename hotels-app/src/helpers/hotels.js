@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     key: "marom-hotel",
     שם: "מלון מרום",
@@ -91,7 +91,3 @@ const data = [
     טלפון: "8508888",
   },
 ];
-
-export default function hotels() {
-  return data;
-}
