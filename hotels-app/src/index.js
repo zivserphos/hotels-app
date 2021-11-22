@@ -105,8 +105,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<App />} />
-          {/* <Route path="/hotel/:name" element={<HotelPage />} /> */}
+          <Route path="/hotels-app" element={<App />} />
+          {/* <Route path="/" element={<App />} /> */}
           {data.map((hotel) => {
             return (
               <Route
@@ -115,9 +115,6 @@ ReactDOM.render(
               />
             );
           })}
-          {/* </Route> */}
-          {/* <Route exact path="/" element={<HotelPage />} /> */}
-
           <Route
             path="*"
             element={

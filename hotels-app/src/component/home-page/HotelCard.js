@@ -13,7 +13,7 @@ export default class HotelCard extends Component {
       <div>
         <Col>
           <Card id={this.props.key}>
-            <Card.Img variant="top" src={"./images/contact.png"} />
+            <Card.Img variant="top" src={this.props.img} />
             <Card.Body>
               <Card.Title>{this.props.name}</Card.Title>
               <Card.Text>
@@ -28,12 +28,6 @@ export default class HotelCard extends Component {
               <Link
                 to={{
                   pathname: `/hotel/${encodeURI(kebabCase(this.props.name))}`,
-                  // state: {
-                  //   telephone: this.props.telephone,
-                  //   name: this.props.name,
-                  //   address: this.props.address,
-                  //   house: this.props.house,
-                  // },
                 }}
               >
                 לאתר הבית

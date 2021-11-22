@@ -1,6 +1,7 @@
 import { Component } from "react";
 import HotelCard from "./HotelCard";
 import { Row, Container } from "react-bootstrap";
+import img from "../../images/contact.png";
 
 export default class HotelGallery extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class HotelGallery extends Component {
     const cards = data.map((card) => {
       return (
         <HotelCard
-          img={""}
+          img={img}
           name={card["שם"]}
           address={card["כתובת"]}
           street={card["רחוב"]}

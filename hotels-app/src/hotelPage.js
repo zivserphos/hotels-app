@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import img from "./images/contact.png";
 
 export default class HotelPage extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export default class HotelPage extends Component {
     return (
       <Col className="HotelPageCardPadding">
         <Card style={{ width: "18rem", margin: "auto" }}>
-          <Card.Img variant="top" src="/images/contact.png" />
+          <Card.Img variant="top" src={img} />
           <Card.Body>
             <Card.Title>{this.props.hotel["שם"]}</Card.Title>
             <Card.Text className="align-right">
